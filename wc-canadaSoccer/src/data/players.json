@@ -1,0 +1,426 @@
+{
+  "players": [
+    {
+      "id": "crepeau",
+      "name": "Maxime Crépeau",
+      "category": "defenders",
+      "position": "GK",
+      "age": 32,
+      "currentClub": "Portland Timbers",
+      "stats": {
+        "OVR": 80,
+        "PAC": 81,
+        "SHO": 78,
+        "PAS": 79,
+        "DRI": 82,
+        "DEF": 45,
+        "PHY": 77
+      },
+      "bio": "Maxime Crépeau is Canada's wall in goal. Known for his incredible reflexes and leadership from the back, his heroic performances in MLS and for the national team have cemented his spot as the starting goalkeeper. He is highly regarded for his shot-stopping ability and commanding presence during set pieces."
+    },
+    {
+      "id": "davies",
+      "name": "Alphonso Davies",
+      "category": "defenders",
+      "position": "LB",
+      "age": 25,
+      "currentClub": "Bayern Munich",
+      "stats": {
+        "OVR": 86,
+        "PAC": 96,
+        "SHO": 68,
+        "PAS": 78,
+        "DRI": 85,
+        "DEF": 76,
+        "PHY": 78
+      },
+      "bio": "Alphonso 'Phonzie' Davies is one of the most explosive left-backs in world football. Emerging from Edmonton, Alberta, he rose through the Vancouver Whitecaps academy to join German giants Bayern Munich. Davies is Canada's superstar, renowned for his generational pace, dribbling skill, and defensive recoveries. He scored Canada's first-ever men's World Cup goal in 2022."
+    },
+    {
+      "id": "johnston",
+      "name": "Alistair Johnston",
+      "category": "defenders",
+      "position": "RB",
+      "age": 27,
+      "currentClub": "Celtic FC",
+      "stats": {
+        "OVR": 79,
+        "PAC": 80,
+        "SHO": 55,
+        "PAS": 71,
+        "DRI": 73,
+        "DEF": 78,
+        "PHY": 82
+      },
+      "bio": "Alistair Johnston is a gritty and reliable right-back who plays for Scottish powerhouse Celtic FC. Johnston is known for his tenacious tackling, work rate, and intelligence on the pitch. A passionate leader, he embodies the defensive spirit of Canada Soccer, making him a fan favorite both domestically and in Glasgow."
+    },
+    {
+      "id": "miller",
+      "name": "Kamal Miller",
+      "category": "defenders",
+      "position": "CB",
+      "age": 29,
+      "currentClub": "Portland Timbers",
+      "stats": {
+        "OVR": 76,
+        "PAC": 72,
+        "SHO": 42,
+        "PAS": 68,
+        "DRI": 65,
+        "DEF": 76,
+        "PHY": 79
+      },
+      "bio": "Kamal Miller is a sturdy left-footed center-back with exceptional passing ability out of the back. His composure under pressure and reading of the game make him crucial for Canada's defensive structure. Having played extensively in MLS, Miller brings vital experience to the backline."
+    },
+    {
+      "id": "bombito",
+      "name": "Moïse Bombito",
+      "category": "defenders",
+      "position": "CB",
+      "age": 26,
+      "currentClub": "OGC Nice",
+      "stats": {
+        "OVR": 78,
+        "PAC": 86,
+        "SHO": 48,
+        "PAS": 65,
+        "DRI": 67,
+        "DEF": 77,
+        "PHY": 80
+      },
+      "bio": "Moïse Bombito is an athletic, rapidly rising center-back playing in France's Ligue 1 with Nice. Gifted with incredible recovery speed and physical dominance, Bombito represents the future of Canada's defensive core, posing a massive threat on defensive interceptions and offensive set-pieces."
+    },
+    {
+      "id": "cornelius",
+      "name": "Derek Cornelius",
+      "category": "defenders",
+      "position": "CB",
+      "age": 28,
+      "currentClub": "Olympique de Marseille",
+      "stats": {
+        "OVR": 77,
+        "PAC": 70,
+        "SHO": 40,
+        "PAS": 62,
+        "DRI": 61,
+        "DEF": 77,
+        "PHY": 81
+      },
+      "bio": "Derek Cornelius has established himself as a robust defensive force in Europe, currently playing for Marseille. Strong in the air and aggressive in duels, Cornelius is a rock in Canada's defensive wall, bringing physical presence and organization to the team's back line."
+    },
+    {
+      "id": "laryea",
+      "name": "Richie Laryea",
+      "category": "defenders",
+      "position": "RB",
+      "age": 31,
+      "currentClub": "Toronto FC",
+      "stats": {
+        "OVR": 76,
+        "PAC": 83,
+        "SHO": 63,
+        "PAS": 69,
+        "DRI": 74,
+        "DEF": 72,
+        "PHY": 74
+      },
+      "bio": "Richie Laryea is a versatile and competitive full-back known for his direct runs, quick feet, and ability to draw fouls in dangerous areas. A proud Toronto FC player, Laryea can play on either flank and brings intense energy, grit, and passion to the Voyageurs on every single matchday."
+    },
+    {
+      "id": "adehugbe",
+      "name": "Sam Adekugbe",
+      "category": "defenders",
+      "position": "LB",
+      "age": 31,
+      "currentClub": "Vancouver Whitecaps",
+      "stats": {
+        "OVR": 75,
+        "PAC": 78,
+        "SHO": 50,
+        "PAS": 70,
+        "DRI": 71,
+        "DEF": 73,
+        "PHY": 74
+      },
+      "bio": "Sam Adekugbe is a reliable left-back with international experience across England, Norway, and Turkey. Famed for his iconic snow-bank celebration during the historic 2022 World Cup qualifying run, Adekugbe combines defensive reliability with smart overlapping runs."
+    },
+    {
+      "id": "stclair",
+      "name": "Dayne St. Clair",
+      "category": "defenders",
+      "position": "GK",
+      "age": 29,
+      "currentClub": "Minnesota United",
+      "stats": {
+        "OVR": 75,
+        "PAC": 76,
+        "SHO": 72,
+        "PAS": 70,
+        "DRI": 77,
+        "DEF": 40,
+        "PHY": 73
+      },
+      "bio": "Dayne St. Clair is a tall, athletic goalkeeper with a reputation for spectacular penalty saves. Playing in MLS for Minnesota, he provides excellent depth and competition in Canada's goalkeeper union with his long reach and shot-stopping capabilities."
+    },
+    {
+      "id": "eustaquio",
+      "name": "Stephen Eustáquio",
+      "category": "midfielders",
+      "position": "CM",
+      "age": 29,
+      "currentClub": "FC Porto",
+      "stats": {
+        "OVR": 82,
+        "PAC": 70,
+        "SHO": 72,
+        "PAS": 81,
+        "DRI": 79,
+        "DEF": 77,
+        "PHY": 76
+      },
+      "bio": "Stephen Eustáquio is the heartbeat of Canada's midfield. Playing for Portuguese giants FC Porto, he is a master tactician who dictates the tempo of the match. Eustáquio combines precise passing, defensive work-rate, and exceptional set-piece delivery, serving as the team's on-field general and vice-captain."
+    },
+    {
+      "id": "kone",
+      "name": "Ismaël Koné",
+      "category": "midfielders",
+      "position": "CM",
+      "age": 23,
+      "currentClub": "Olympique de Marseille",
+      "stats": {
+        "OVR": 79,
+        "PAC": 78,
+        "SHO": 71,
+        "PAS": 76,
+        "DRI": 80,
+        "DEF": 71,
+        "PHY": 75
+      },
+      "bio": "Ismaël Koné is a highly talented, dynamic box-to-box midfielder playing under Roberto De Zerbi at Marseille. Known for his smooth ball-carrying, height, and ability to break lines, Koné transitioned quickly from Montreal to Europe and represents Canada's exciting elite midfield generation."
+    },
+    {
+      "id": "osorio",
+      "name": "Jonathan Osorio",
+      "category": "midfielders",
+      "position": "CM",
+      "age": 33,
+      "currentClub": "Toronto FC",
+      "stats": {
+        "OVR": 77,
+        "PAC": 68,
+        "SHO": 70,
+        "PAS": 76,
+        "DRI": 77,
+        "DEF": 68,
+        "PHY": 70
+      },
+      "bio": "Jonathan Osorio is the longest-serving active midfielder for Canada and the captain of Toronto FC. An intelligent playmaker with sublime close control and space-finding capabilities, Osorio's veteran leadership and composure are invaluable assets to Canada's national setup."
+    },
+    {
+      "id": "piette",
+      "name": "Samuel Piette",
+      "category": "midfielders",
+      "position": "CDM",
+      "age": 31,
+      "currentClub": "CF Montréal",
+      "stats": {
+        "OVR": 74,
+        "PAC": 58,
+        "SHO": 46,
+        "PAS": 67,
+        "DRI": 66,
+        "DEF": 74,
+        "PHY": 80
+      },
+      "bio": "Samuel Piette is a traditional defensive midfielder who excels at breaking up opposition attacks. The CF Montréal captain is a warrior in the center of the pitch, known for his vocal leadership, robust tackling, and deep commitment to the red and white shirt."
+    },
+    {
+      "id": "choiniere",
+      "name": "Mathieu Choinière",
+      "category": "midfielders",
+      "position": "CM",
+      "age": 27,
+      "currentClub": "Grasshopper Zurich",
+      "stats": {
+        "OVR": 75,
+        "PAC": 74,
+        "SHO": 66,
+        "PAS": 73,
+        "DRI": 74,
+        "DEF": 70,
+        "PHY": 73
+      },
+      "bio": "Mathieu Choinière is an incredibly versatile, high-work-rate midfielder now playing in Switzerland. Capable of playing anywhere in midfield or as a wingback, Choinière is praised for his tactical intelligence, relentless pressing, and ability to retain possession under pressure."
+    },
+    {
+      "id": "shaffelburg",
+      "name": "Jacob Shaffelburg",
+      "category": "attackers",
+      "position": "LW",
+      "age": 26,
+      "currentClub": "Nashville SC",
+      "stats": {
+        "OVR": 77,
+        "PAC": 92,
+        "SHO": 70,
+        "PAS": 72,
+        "DRI": 75,
+        "DEF": 54,
+        "PHY": 68
+      },
+      "bio": "Jacob Shaffelburg, dubbed the 'Maritime Messi' by Canadian fans, is a speedy winger from Nova Scotia. Famed for his directness, blazing pace, and pin-point crosses, Shaffelburg has become a breakout star, turning defenders inside out and scoring critical goals in tournament runs."
+    },
+    {
+      "id": "david",
+      "name": "Jonathan David",
+      "category": "attackers",
+      "position": "ST",
+      "age": 26,
+      "currentClub": "LOSC Lille",
+      "stats": {
+        "OVR": 84,
+        "PAC": 85,
+        "SHO": 83,
+        "PAS": 76,
+        "DRI": 82,
+        "DEF": 43,
+        "PHY": 76
+      },
+      "bio": "Jonathan David, known as 'The Iceman', is one of Europe's most clinical strikers, leading the line for French club Lille. Cool and collected in front of goal, David boasts elite movement, two-footed finishing, and tactical intelligence, making him Canada's primary attacking threat and top all-time scorer."
+    },
+    {
+      "id": "larin",
+      "name": "Cyle Larin",
+      "category": "attackers",
+      "position": "ST",
+      "age": 31,
+      "currentClub": "RCD Mallorca",
+      "stats": {
+        "OVR": 79,
+        "PAC": 78,
+        "SHO": 80,
+        "PAS": 67,
+        "DRI": 74,
+        "DEF": 40,
+        "PHY": 82
+      },
+      "bio": "Cyle Larin is a powerful, physical striker who plays in La Liga with Mallorca. Holding the record as one of Canada's leading goalscorers, Larin excels at hold-up play, aerial duels, and clinical positioning inside the box. He has scored crucial goals in Canada's biggest international matches."
+    },
+    {
+      "id": "buchanan",
+      "name": "Tajon Buchanan",
+      "category": "attackers",
+      "position": "RW",
+      "age": 27,
+      "currentClub": "Inter Milan",
+      "stats": {
+        "OVR": 80,
+        "PAC": 89,
+        "SHO": 69,
+        "PAS": 73,
+        "DRI": 82,
+        "DEF": 64,
+        "PHY": 72
+      },
+      "bio": "Tajon Buchanan is a flashy, highly skilled winger playing for Serie A giants Inter Milan. Buchanan is renowned for his flair, technical dribbling, quick stepovers, and work rate. Capable of playing as a winger or wingback, he brings Champions League experience and creative spark to Canada's attack."
+    },
+    {
+      "id": "millar",
+      "name": "Liam Millar",
+      "category": "attackers",
+      "position": "LW",
+      "age": 26,
+      "currentClub": "Hull City",
+      "stats": {
+        "OVR": 75,
+        "PAC": 85,
+        "SHO": 68,
+        "PAS": 70,
+        "DRI": 78,
+        "DEF": 45,
+        "PHY": 65
+      },
+      "bio": "Liam Millar is a creative winger with a background at Liverpool's academy, now playing in the English Championship. Millar is highly effective at cutting inside from the left wing, combining neat combination play with a lethal curled shot and strong 1v1 dribbling ability."
+    },
+    {
+      "id": "ugbo",
+      "name": "Ike Ugbo",
+      "category": "attackers",
+      "position": "ST",
+      "age": 27,
+      "currentClub": "Sheffield Wednesday",
+      "stats": {
+        "OVR": 74,
+        "PAC": 75,
+        "SHO": 75,
+        "PAS": 60,
+        "DRI": 70,
+        "DEF": 32,
+        "PHY": 72
+      },
+      "bio": "Ike Ugbo is a Chelsea academy graduate who brings sharp instincts and poaching ability to Canada's attack. A clinical penalty-box striker, Ugbo's movement and strength in congested areas make him an excellent target-man and impact sub for the national side."
+    },
+    {
+      "id": "hoilett",
+      "name": "Junior Hoilett",
+      "category": "attackers",
+      "position": "LW",
+      "age": 36,
+      "currentClub": "Hibernian FC",
+      "stats": {
+        "OVR": 73,
+        "PAC": 69,
+        "SHO": 72,
+        "PAS": 74,
+        "DRI": 75,
+        "DEF": 48,
+        "PHY": 64
+      },
+      "bio": "Junior Hoilett is the veteran statesman of Canada's attacking corps. With over a decade of Premier League and Championship experience, Hoilett's crossing accuracy, veteran composure, and locker-room leadership are vital for integrating Canada's younger stars."
+    },
+    {
+      "id": "bair",
+      "name": "Theo Bair",
+      "category": "attackers",
+      "position": "ST",
+      "age": 26,
+      "currentClub": "AJ Auxerre",
+      "stats": {
+        "OVR": 74,
+        "PAC": 79,
+        "SHO": 73,
+        "PAS": 62,
+        "DRI": 70,
+        "DEF": 35,
+        "PHY": 80
+      },
+      "bio": "Theo Bair is a physically imposing, athletic striker playing in France's Ligue 1 with Auxerre. After a breakout season in Scotland, Bair's hold-up play, height, and aerial ability provide Canada with a dynamic focal point in the final third of the pitch."
+    }
+  ],
+  "crew": [
+    {
+      "id": "marsch",
+      "name": "Jesse Marsch",
+      "jobTitle": "Head Coach",
+      "photo": "jesse_marsch"
+    },
+    {
+      "id": "biello",
+      "name": "Mauro Biello",
+      "jobTitle": "Assistant Coach",
+      "photo": "mauro_biello"
+    },
+    {
+      "id": "stalteri",
+      "name": "Paul Stalteri",
+      "jobTitle": "Assistant Coach",
+      "photo": "paul_stalteri"
+    },
+    {
+      "id": "eaddy",
+      "name": "Simon Eaddy",
+      "jobTitle": "Goalkeeper Coach",
+      "photo": "simon_eaddy"
+    }
+  ]
+}
