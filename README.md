@@ -1,7 +1,7 @@
 # 🍁 Canada Soccer 2026 World Cup Tribute
 
 <div align="center">
-  <h3>A High-Performance React + TypeScript Application</h3>
+  <h3>A High-Performance React Application</h3>
   <p>Celebrating the Canada Soccer Men's National Team for the 2026 FIFA World Cup.</p>
 </div>
 
