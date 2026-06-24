@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import playersData from '../../data/players.json';
 
+// Group players by category
+const defenders = playersData.players.filter((p) => p.category === 'defenders');
+const midfielders = playersData.players.filter((p) => p.category === 'midfielders');
+const attackers = playersData.players.filter((p) => p.category === 'attackers');
+const crew = playersData.crew;
+
 const Roster: React.FC = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [selectedPlayer, setSelectedPlayer] = useState<any | null>(null);
 
-  // Group players by category
-  const defenders = playersData.players.filter((p) => p.category === 'defenders');
-  const midfielders = playersData.players.filter((p) => p.category === 'midfielders');
-  const attackers = playersData.players.filter((p) => p.category === 'attackers');
-  const crew = playersData.crew;
-
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handlePlayerClick = (player: any) => {
     setSelectedPlayer(player);
   };

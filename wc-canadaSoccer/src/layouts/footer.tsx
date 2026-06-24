@@ -1,6 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
+declare module 'react' {
+  namespace JSX {
+    interface IntrinsicElements {
+      'wa-icon': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & { name?: string; family?: string };
+    }
+  }
+}
+
+
 const Footer: React.FC = () => {
   return (
     <footer className="global-footer">
