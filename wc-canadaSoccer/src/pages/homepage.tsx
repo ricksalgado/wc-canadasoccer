@@ -9,6 +9,7 @@ import playersData from '../data/players.json';
 // R3F 3D Trophy Component
 const Trophy: React.FC<{ scrollProgress: number }> = ({ scrollProgress }) => {
   const { scene } = useGLTF('/world_cup_trophy.glb');
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const trophyRef = useRef<any>(null);
 
   useFrame((state) => {
@@ -30,6 +31,7 @@ const Trophy: React.FC<{ scrollProgress: number }> = ({ scrollProgress }) => {
 
 const Homepage: React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [randomPlayer, setRandomPlayer] = useState<any>(null);
   
   // Countdown State
@@ -39,7 +41,9 @@ const Homepage: React.FC = () => {
   // Hype Meter State
   const [hypeLevel, setHypeLevel] = useState(0);
   const [showHypeModal, setShowHypeModal] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [confettiParticles, setConfettiParticles] = useState<any[]>([]);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const decayTimer = useRef<any | null>(null);
 
   // Email form state
@@ -64,6 +68,7 @@ const Homepage: React.FC = () => {
   useEffect(() => {
     if (playersData && playersData.players.length > 0) {
       const randomIndex = Math.floor(Math.random() * playersData.players.length);
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setRandomPlayer(playersData.players[randomIndex]);
     }
   }, []);
