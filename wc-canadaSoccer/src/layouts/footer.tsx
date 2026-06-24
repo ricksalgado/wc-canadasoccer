@@ -21,6 +21,7 @@ const Footer: React.FC = () => {
           </p>
           <div className="social-links">
             <a href="https://x.com/CanadaSoccerEN" target="_blank" rel="noreferrer" aria-label="Twitter X">
+              {/* @ts-ignore */}
               <wa-icon name="x-twitter" family="brands"></wa-icon>
             </a>
             <a href="https://instagram.com/canadasoccer" target="_blank" rel="noreferrer" aria-label="Instagram">

@@ -2,14 +2,27 @@ import React, { useState, useEffect, useRef, Suspense } from 'react';
 import { Link } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, Center } from '@react-three/drei';
+import * as THREE from 'three';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import playersData from '../data/players.json';
 
 // R3F 3D Trophy Component
+
+interface Player {
+  id: string;
+  name: string;
+  category: string;
+  position: string;
+  age: number;
+  currentClub: string;
+  stats: Record<string, number>;
+  bio: string;
+}
+
 const Trophy: React.FC<{ scrollProgress: number }> = ({ scrollProgress }) => {
   const { scene } = useGLTF('/world_cup_trophy.glb');
-  const trophyRef = useRef<any>(null);
+  const trophyRef = useRef<THREE.Group>(null);
 
   useFrame((state) => {
     if (trophyRef.current) {
@@ -30,7 +43,7 @@ const Trophy: React.FC<{ scrollProgress: number }> = ({ scrollProgress }) => {
 
 const Homepage: React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [randomPlayer, setRandomPlayer] = useState<any>(null);
+  const [randomPlayer] = useState<Player | null>(() => playersData && playersData.players.length > 0 ? playersData.players[Math.floor(Math.random() * playersData.players.length)] : null);
   
   // Countdown State
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -39,8 +52,8 @@ const Homepage: React.FC = () => {
   // Hype Meter State
   const [hypeLevel, setHypeLevel] = useState(0);
   const [showHypeModal, setShowHypeModal] = useState(false);
-  const [confettiParticles, setConfettiParticles] = useState<any[]>([]);
-  const decayTimer = useRef<any | null>(null);
+  const [confettiParticles, setConfettiParticles] = useState<Array<{ id: number; x: number; y: number; color: string; angle: number; speed: number; rotation: number; }>>([]);
+  const decayTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Email form state
   const [emailSubscribed, setEmailSubscribed] = useState(false);
@@ -61,12 +74,7 @@ const Homepage: React.FC = () => {
   }, []);
 
   // 2. Select a random player for the FIFA Player Card
-  useEffect(() => {
-    if (playersData && playersData.players.length > 0) {
-      const randomIndex = Math.floor(Math.random() * playersData.players.length);
-      setRandomPlayer(playersData.players[randomIndex]);
-    }
-  }, []);
+
 
   // 3. Countdown logic (Target: World Cup kickoff, e.g. June 12, 2026)
   useEffect(() => {

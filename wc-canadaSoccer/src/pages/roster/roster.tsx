@@ -1,8 +1,60 @@
 import React, { useState } from 'react';
 import playersData from '../../data/players.json';
 
+
+interface Player {
+  id: string;
+  name: string;
+  category: string;
+  position: string;
+  age: number;
+  currentClub: string;
+  stats: Record<string, number>;
+  bio: string;
+}
+
+interface PlayerCardProps {
+  player: Player;
+  onClick: (player: Player) => void;
+}
+
+const PlayerCard: React.FC<PlayerCardProps> = ({ player, onClick }) => (
+  <div
+    key={player.id}
+    className="roster-player-card-box"
+    onClick={() => onClick(player)}
+  >
+    <div className="card-image-container">
+      <span className="player-jersey-number">#</span>
+      <div className="card-player-avatar">
+        <svg viewBox="0 0 100 100" fill="#DA291C" width="70" height="70">
+          <circle cx="50" cy="30" r="18" />
+          <path d="M50,52 C30,52 15,68 15,85 L85,85 C85,68 70,52 50,52 Z" />
+        </svg>
+      </div>
+    </div>
+    <div className="card-info-area">
+      <h3 className="card-player-name">{player.name}</h3>
+      <ul className="card-details-list">
+        <li>
+          <span className="card-details-label">Position</span>
+          <span>{player.position}</span>
+        </li>
+        <li>
+          <span className="card-details-label">Age</span>
+          <span>{player.age}</span>
+        </li>
+        <li>
+          <span className="card-details-label">Team</span>
+          <span>{player.currentClub}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+);
+
 const Roster: React.FC = () => {
-  const [selectedPlayer, setSelectedPlayer] = useState<any | null>(null);
+  const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
 
   // Group players by category
   const defenders = playersData.players.filter((p) => p.category === 'defenders');
@@ -10,7 +62,7 @@ const Roster: React.FC = () => {
   const attackers = playersData.players.filter((p) => p.category === 'attackers');
   const crew = playersData.crew;
 
-  const handlePlayerClick = (player: any) => {
+  const handlePlayerClick = (player: Player) => {
     setSelectedPlayer(player);
   };
 
@@ -31,38 +83,7 @@ const Roster: React.FC = () => {
       <h2 className="roster-section-heading">DEFENDERS & GOALKEEPERS</h2>
       <div className="roster-grid">
         {defenders.map((player) => (
-          <div 
-            key={player.id} 
-            className="roster-player-card-box"
-            onClick={() => handlePlayerClick(player)}
-          >
-            <div className="card-image-container">
-              <span className="player-jersey-number">#</span>
-              <div className="card-player-avatar">
-                <svg viewBox="0 0 100 100" fill="#DA291C" width="70" height="70">
-                  <circle cx="50" cy="30" r="18" />
-                  <path d="M50,52 C30,52 15,68 15,85 L85,85 C85,68 70,52 50,52 Z" />
-                </svg>
-              </div>
-            </div>
-            <div className="card-info-area">
-              <h3 className="card-player-name">{player.name}</h3>
-              <ul className="card-details-list">
-                <li>
-                  <span className="card-details-label">Position</span>
-                  <span>{player.position}</span>
-                </li>
-                <li>
-                  <span className="card-details-label">Age</span>
-                  <span>{player.age}</span>
-                </li>
-                <li>
-                  <span className="card-details-label">Team</span>
-                  <span>{player.currentClub}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <PlayerCard key={player.id} player={player} onClick={handlePlayerClick} />
         ))}
       </div>
 
@@ -70,38 +91,7 @@ const Roster: React.FC = () => {
       <h2 className="roster-section-heading">MIDFIELDERS</h2>
       <div className="roster-grid">
         {midfielders.map((player) => (
-          <div 
-            key={player.id} 
-            className="roster-player-card-box"
-            onClick={() => handlePlayerClick(player)}
-          >
-            <div className="card-image-container">
-              <span className="player-jersey-number">#</span>
-              <div className="card-player-avatar">
-                <svg viewBox="0 0 100 100" fill="#DA291C" width="70" height="70">
-                  <circle cx="50" cy="30" r="18" />
-                  <path d="M50,52 C30,52 15,68 15,85 L85,85 C85,68 70,52 50,52 Z" />
-                </svg>
-              </div>
-            </div>
-            <div className="card-info-area">
-              <h3 className="card-player-name">{player.name}</h3>
-              <ul className="card-details-list">
-                <li>
-                  <span className="card-details-label">Position</span>
-                  <span>{player.position}</span>
-                </li>
-                <li>
-                  <span className="card-details-label">Age</span>
-                  <span>{player.age}</span>
-                </li>
-                <li>
-                  <span className="card-details-label">Team</span>
-                  <span>{player.currentClub}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <PlayerCard key={player.id} player={player} onClick={handlePlayerClick} />
         ))}
       </div>
 
@@ -109,38 +99,7 @@ const Roster: React.FC = () => {
       <h2 className="roster-section-heading">ATTACKERS</h2>
       <div className="roster-grid">
         {attackers.map((player) => (
-          <div 
-            key={player.id} 
-            className="roster-player-card-box"
-            onClick={() => handlePlayerClick(player)}
-          >
-            <div className="card-image-container">
-              <span className="player-jersey-number">#</span>
-              <div className="card-player-avatar">
-                <svg viewBox="0 0 100 100" fill="#DA291C" width="70" height="70">
-                  <circle cx="50" cy="30" r="18" />
-                  <path d="M50,52 C30,52 15,68 15,85 L85,85 C85,68 70,52 50,52 Z" />
-                </svg>
-              </div>
-            </div>
-            <div className="card-info-area">
-              <h3 className="card-player-name">{player.name}</h3>
-              <ul className="card-details-list">
-                <li>
-                  <span className="card-details-label">Position</span>
-                  <span>{player.position}</span>
-                </li>
-                <li>
-                  <span className="card-details-label">Age</span>
-                  <span>{player.age}</span>
-                </li>
-                <li>
-                  <span className="card-details-label">Team</span>
-                  <span>{player.currentClub}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <PlayerCard key={player.id} player={player} onClick={handlePlayerClick} />
         ))}
       </div>
 
